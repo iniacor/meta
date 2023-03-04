@@ -1,13 +1,26 @@
 @import 'global.scss';
 
+.article-block.container {
+  @include for-large-up {
+    margin-right: 28px;
+  }
+}
+
 .author {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  @include for-large-up {
+    flex-direction: row;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+  }
   &__photo {
     padding-top: 32px;
     margin-bottom: 10px;
+    @include for-large-up {
+      padding-top: 0;
+    }
   }
   &__photo-img {
     max-width: 100%;
@@ -26,6 +39,13 @@
     margin: 0 -12px 45px;
     padding: 0 12px 41px;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+    @include for-large-up {
+      align-items: start;
+      padding-top: 49px;
+      padding-bottom: 20px;
+      margin: 0;
+      border-bottom: none;
+    }
   }
 
   &__name {
@@ -35,11 +55,25 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 36px;
+    @include for-large-up {
+      margin-bottom: 16px;
+      font-size: 32px;
+      order: 0;
+    }
+  }
+  &__text {
+    @include for-large-up {
+      text-align: left;
+      max-width: 737px;
+    }
   }
 
   &__actions {
     margin-bottom: 29px;
     display: flex;
+    @include for-large-up {
+      margin-bottom: 13px;
+    }
   }
   &__actions-block {
     display: flex;

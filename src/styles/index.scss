@@ -12,7 +12,7 @@
   flex-direction: column;
   max-width: 100%;
   @include for-large-up {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
   }
 }
@@ -38,6 +38,6 @@ body {
   margin: 0 auto;
 
   @include for-large-up {
-    padding: 0 10px;
+    padding: 0;
   }
 }

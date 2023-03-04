@@ -1,3 +1,12 @@
 .content {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  @include for-large-up {
+    flex-direction: row;
+    max-width: 1248px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+  }
 }

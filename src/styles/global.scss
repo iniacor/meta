@@ -38,7 +38,9 @@ button {
 
 img {
   max-width: 100%;
-  display: block;
+  height: auto;
+  display: inline-block;
+  object-fit: cover;
 }
 
 .active-button {

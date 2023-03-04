@@ -10,25 +10,55 @@
   border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
   &__list {
     margin-bottom: 17px;
+    @include for-large-up {
+      margin-bottom: 40px;
+    }
   }
 
   &__list-item {
     margin-bottom: 20px;
+    @include for-large-up {
+      margin-bottom: 0;
+    }
   }
 
   &__item {
     display: flex;
     flex-direction: column;
+    @include for-large-up {
+      flex-direction: row;
+      padding: 24px 0;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+    }
   }
+
   &__item-img {
     margin-bottom: 12px;
+    border-radius: 12px;
+    @include for-large-up {
+      margin-right: 24px;
+      margin-bottom: 0;
+      max-width: 200px;
+      height: 125px;
+    }
   }
+
   &__item-meta {
     display: flex;
     justify-content: space-between;
     margin-bottom: 4px;
     color: $text-color-secondary;
+    @include for-large-up {
+      justify-content: start;
+    }
   }
+
+  &__item-time {
+    @include for-large-up {
+      margin-right: 24px;
+    }
+  }
+
   &__item-comments {
     display: flex;
     align-items: center;
@@ -36,11 +66,32 @@
   &__item-comments-quantity {
     margin-right: 5px;
   }
-  &__item-text {
+
+  &__item-title {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     font-family: 'Roboto Slab', sans-serif;
+    @include for-large-up {
+      margin-bottom: 8px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  &__item-text {
+    display: none;
+    @include for-large-up {
+      display: block;
+      max-width: 670px;
+      font-family: 'Roboto', serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: $text-color-secondary;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }
 .icon-comments {
