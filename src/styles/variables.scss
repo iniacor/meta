@@ -1,0 +1,88 @@
+$text-color-primary: #000000cc;
+$text-color-secondary: #0000008a;
+$text-color-lightgrey: #00000066;
+// $text-color-light: #a2a2a2;
+
+$bc-color-primary: #343434;
+$bc-color-secondary: #f6f6f6;
+
+$accent-primary: #4b99f5;
+
+//================================
+$text-color-darkblue: #3040c4;
+$text-color-blue: #3141c5;
+$text-color-active-btn: #f5c651;
+$text-color-active-learbtn: #ed526d;
+$text-color-hover-link: $text-color-darkblue;
+$text-color-lazur: #0189d1;
+
+$bc-color-accent: #3141c5;
+$bc-color-darkblue: #3040c4;
+$bc-color-lightskyblue: #00a1c612;
+$bc-color-beige: #fcf0e3;
+$bc-color-white: #fff;
+$bc-color-grey: #f4f5f7;
+
+$bc-color-night-rider: #343434;
+
+$border-color: #2b292d3b;
+$burger-btn-color: #fff;
+$burger-btn-color-active: $text-color-active-learbtn;
+$md: 921px;
+$sm: 450px;
+$fs: 1300px;
+$tablet: 920px;
+
+@mixin for-feature-section {
+  @media screen and (max-width: $fs) {
+    @content;
+  }
+}
+
+@mixin for-large-up {
+  @media screen and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin for-medium-up {
+  @media screen and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin for-small-up {
+  @media screen and (max-width: $md) {
+    @content;
+  }
+}
+
+$maxWidth: 1400;
+@mixin adaptiv-width($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  width: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin adaptiv-margin-right($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  margin-right: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin adaptiv-padding-right($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 600;
+  padding-right: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 600px) / #{$maxWidth}));
+}
+@mixin adaptiv-padding-left($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 600;
+  padding-left: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 600px) / #{$maxWidth}));
+}

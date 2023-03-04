@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon" />
+    <title>Meta.ua</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header" id="home">
+        <div class="header__top">
+          <div class="container app-bar">
+            <button class="menu-btn" type="button" aria-lable="open-menu">
+              <i class="icon-menu"></i>
+            </button>
+            <div class="logo">
+              <a href="#home" class="logo__link" aria-label="Go to home page">
+                <span class="sr-only">Go to home page</span>
+                <i class="icon-meta-left"></i>
+                <span class="logo__name">meta</span>
+                <i class="icon-meta-right"></i>
+              </a>
+            </div>
+            <div class="header__lang">
+              <span class="current">UA</span>
+              <a class="another-lang" href="">RU</a>
+            </div>
+          </div>
+          <!-- <nav class="navigation">
+            <a class="navigation__item navigation__item_selected" href="#home">Головна</a>
+            <a class="navigation__item" href="#">Новини</a>
+            <a class="navigation__item" href="#">Блог<i class="navigation__arrow"></i></a>
+          </nav> -->
+        </div>
+      </header>
+      <main class="content">
+        <article class="container">
+          <div class="author">
+            <div class="author__photo">
+              <img src="images/author-photo.png" alt="author portrait" class="author__photo-img" />
+            </div>
+            <div class="author__content">
+              <div class="author__actions">
+                <div class="author__actions-block">
+                  <i class="icon-posts"></i>
+                  <span class="author__post-quantity actions">345</span>
+                </div>
+                <div class="author__actions-block">
+                  <i class="icon-subscribers"></i>
+                  <span class="author__subscribers-quantity actions">4 567</span>
+                </div>
+                <div class="author__actions-block">
+                  <i class="icon-views"></i>
+                  <span class="author__views-quantity actions">12 809 678</span>
+                </div>
+              </div>
+              <h2 class="author__name">Костянтин Заруцький</h2>
+              <div class="author__text">
+                <p class="author__text">
+                  Костантин Заруцький — справжнє ім’я популярного автоблогера, який публікується в
+                  мережі під ніком AcademeG. Його відео про перетворення старих авто дивляться
+                  міліони підписників. Сам він називає свою роботу автокритикою.
+                </p>
+              </div>
+            </div>
+          </div>
+          <section class="news">
+            <ul class="news__list">
+              <li class="news__list-item">
+                <div class="news__item">
+                  <div class="news__item-img">
+                    <img src="images/first-news-img.png" alt="img description" />
+                  </div>
+                  <div class="news__item-content">
+                    <div class="news__item-meta">
+                      <span class="news__item-time">08:30 - 24 ноября 2020</span>
+                      <div class="news__item-comments">
+                        <i class="icon-comments"></i>
+                        <span class="news__item-comments-quantity">206</span>
+                      </div>
+                    </div>
+                    <div class="news__item-wrapper">
+                      <a href="#" class="news__item-link">
+                        <p class="news__item-text">
+                          Росія заборонила співробітникам ФСБ мати дозвіл на проживання за кордоном
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="news__list-item">
+                <div class="news__item">
+                  <div class="news__item-img">
+                    <img src="images/second-news-img.png" alt="img description" />
+                  </div>
+                  <div class="news__item-content">
+                    <div class="news__item-meta">
+                      <span class="news__item-time">08:30 - 24 ноября 2020</span>
+                      <div class="news__item-comments">
+                        <i class="icon-comments"></i>
+                        <span class="news__item-comments-quantity">206</span>
+                      </div>
+                    </div>
+                    <div class="news__item-wrapper">
+                      <a href="#" class="news__item-link">
+                        <p class="news__item-text">
+                          Влад Фісун: Я не знаю як <br />
+                          діджей-галузь вибереться з цього хаосу
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="news__list-item">
+                <div class="news__item">
+                  <div class="news__item-img">
+                    <img src="images/third-news-img.png" alt="img description" />
+                  </div>
+                  <div class="news__item-content">
+                    <div class="news__item-meta">
+                      <span class="news__item-time">08:30 - 24 ноября 2020</span>
+                      <div class="news__item-comments">
+                        <i class="icon-comments"></i>
+                        <span class="news__item-comments-quantity">206</span>
+                      </div>
+                    </div>
+                    <div class="news__item-wrapper">
+                      <a href="#" class="news__item-link">
+                        <p class="news__item-text">
+                          У Білорусі почали відраховувати студентів за протести: з університету - 5
+                          осіб
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="news__list-item">
+                <div class="news__item">
+                  <div class="news__item-img">
+                    <img src="images/fourth-news-img.png" alt="img description" />
+                  </div>
+                  <div class="news__item-content">
+                    <div class="news__item-meta">
+                      <span class="news__item-time">08:30 - 24 ноября 2020</span>
+                      <div class="news__item-comments">
+                        <i class="icon-comments"></i>
+                        <span class="news__item-comments-quantity">206</span>
+                      </div>
+                    </div>
+                    <div class="news__item-wrapper">
+                      <a href="#" class="news__item-link">
+                        <p class="news__item-text">
+                          Влад Фісун: Я не знаю як <br />
+                          діджей-галузь вибереться з цього хаосу
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="news__list-item">
+                <div class="news__item">
+                  <div class="news__item-img">
+                    <img src="images/fitht-news-img.png" alt="img description" />
+                  </div>
+                  <div class="news__item-content">
+                    <div class="news__item-meta">
+                      <span class="news__item-time">08:30 - 24 ноября 2020</span>
+                      <div class="news__item-comments">
+                        <i class="icon-comments"></i>
+                        <span class="news__item-comments-quantity">206</span>
+                      </div>
+                    </div>
+                    <div class="news__item-wrapper">
+                      <a href="#" class="news__item-link">
+                        <p class="news__item-text">
+                          Сергій Верланов: Я не розумію, за що мене звільнили
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="news-load-btn">Більше новин</button>
+          </section>
+        </article>
+        <aside class="container aside-block">
+          <div class="some-adv-block">
+            <a class="some-adv-block__link" href="#">
+              <img
+                class="some-adv-block__img"
+                src="images/glovo-adv.png"
+                alt="advertisement image"
+              />
+            </a>
+          </div>
+          <section class="programm-schedule">
+            <header class="programm-schedule__header">
+              <h2 class="programm-schedule__title">Програма ТВ</h2>
+            </header>
+            <ul class="programm-schedule__list">
+              <li class="programm-schedule__item">
+                <div class="channel-item">
+                  <span class="channel-item__time">09:25</span>
+                  <span class="channel-item__name">т/с “Мене звуть Міша”</span>
+                  <a href="#" class="channel-item__link">Інтер</a>
+                </div>
+              </li>
+              <li class="programm-schedule__item">
+                <div class="channel-item">
+                  <span class="channel-item__time">09:25</span>
+                  <span class="channel-item__name">х/ф “Безславні ублюдки”</span>
+                  <a href="#" class="channel-item__link">1+1</a>
+                </div>
+              </li>
+              <li class="programm-schedule__item">
+                <div class="channel-item">
+                  <span class="channel-item__time">09:25</span>
+                  <span class="channel-item__name">Фінал Ліги Чемпіонів</span>
+                  <a href="#" class="channel-item__link">Інтер</a>
+                </div>
+              </li>
+              <li class="programm-schedule__item">
+                <div class="channel-item">
+                  <span class="channel-item__time">09:25</span>
+                  <span class="channel-item__name">т/с “Мене звуть Міша”</span>
+                  <a href="#" class="channel-item__link">ICTV</a>
+                </div>
+              </li>
+              <li class="programm-schedule__item">
+                <div class="channel-item">
+                  <span class="channel-item__time">09:25</span>
+                  <span class="channel-item__name">Шоу “Голос Діти”</span>
+                  <a href="#" class="channel-item__link">Інтер</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

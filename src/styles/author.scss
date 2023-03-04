@@ -1,0 +1,83 @@
+@import 'global.scss';
+
+.author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__photo {
+    padding-top: 32px;
+    margin-bottom: 10px;
+  }
+  &__photo-img {
+    max-width: 100%;
+    height: 100%;
+    margin-right: 14px;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% + 24px);
+    margin: 0 -12px 45px;
+    padding: 0 12px 41px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+  }
+
+  &__name {
+    display: inline-flex;
+    order: -1;
+    margin-bottom: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  &__actions {
+    margin-bottom: 29px;
+    display: flex;
+  }
+  &__actions-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__actions-block:not(:last-child) {
+    margin-right: 38px;
+  }
+}
+
+.icon-posts {
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  margin-right: 8px;
+  background-image: url('../icons/icon-posts.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon-subscribers {
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  margin-right: 6px;
+  background-image: url('../icons/icon-subscribers.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon-views {
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  margin-right: 6px;
+  background-image: url('../icons/icon-views.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

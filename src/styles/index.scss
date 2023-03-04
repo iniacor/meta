@@ -1,0 +1,43 @@
+@import 'variables.scss';
+@import 'global.scss';
+@import 'main.scss';
+@import 'header.scss';
+@import 'author.scss';
+@import 'news.scss';
+@import 'adv-block.scss';
+@import 'programm-schedule.scss';
+
+.page {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  @include for-large-up {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
+.top-section {
+  background-color: $bc-color-night-rider;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: $text-color-primary;
+  background-color: $bc-color-white;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1248px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 0 auto;
+
+  @include for-large-up {
+    padding: 0 10px;
+  }
+}
