@@ -11,7 +11,7 @@
   &__list {
     margin-bottom: 17px;
     @include for-large-up {
-      margin-bottom: 40px;
+      margin-bottom: 37px;
     }
   }
 
@@ -63,6 +63,7 @@
     display: flex;
     align-items: center;
   }
+
   &__item-comments-quantity {
     margin-right: 5px;
   }
@@ -84,16 +85,13 @@
     @include for-large-up {
       display: block;
       max-width: 670px;
-      font-family: 'Roboto', serif;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
       color: $text-color-secondary;
       overflow: hidden;
       text-overflow: ellipsis;
     }
   }
 }
+
 .icon-comments {
   display: inline-block;
   width: 16px;
@@ -121,8 +119,7 @@
   &:active {
     background-color: $accent-primary;
     color: #fff;
-  }
-  &:focus {
-    // box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
+    border-color: $text-color-hover-link;
+    box-shadow: inset 5px 5px 8px -2px #0a3e79;
   }
 }

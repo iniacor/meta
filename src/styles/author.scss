@@ -27,10 +27,10 @@
     }
   }
   &__photo-img {
-    max-width: 100%;
-    height: 100%;
+    // max-width: 100%;
+    // height: 100%;
     margin-right: 14px;
-    object-fit: cover;
+    // object-fit: cover;
     border-radius: 24px;
   }
 
@@ -58,12 +58,13 @@
     display: inline-flex;
     order: -1;
     margin-bottom: 12px;
-    font-size: 28px;
+    font-size: 1.74rem;
     font-weight: 700;
-    line-height: 36px;
+    line-height: 1.3;
     @include for-large-up {
       margin-bottom: 16px;
-      font-size: 32px;
+      font-size: 2rem;
+      line-height: 1.1;
       order: 0;
     }
   }

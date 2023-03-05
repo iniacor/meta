@@ -3,6 +3,10 @@
 .programm-schedule {
   background-color: $bc-color-secondary;
   border-radius: 12px;
+  width: 100%;
+  @include for-large-up {
+    width: 276px;
+  }
   &__header {
     display: flex;
     align-items: center;
@@ -14,18 +18,21 @@
       padding-top: 20px;
     }
   }
+
   &__title {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     font-family: 'Roboto Slab', serif;
   }
+
   &__list {
     padding: 20px 15px 34px 17px;
     @include for-large-up {
-      padding: 16px 20px 24px 14px;
+      padding: 16px 8px 24px 14px;
     }
   }
+
   &__item:not(:last-child) {
     margin-bottom: 19px;
     @include for-large-up {
@@ -40,15 +47,17 @@
     margin-right: 12px;
     color: $text-color-lightgrey;
     @include for-large-up {
-      margin-right: 5px;
+      margin-right: 8px;
     }
   }
+
   &__name {
     max-width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+
   &__link {
     display: inline-block;
     margin-left: auto;

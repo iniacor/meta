@@ -26,27 +26,36 @@
     <div class="page">
       <header class="header" id="home">
         <div class="header__top">
-          <div class="container app-bar">
-            <button class="menu-btn" type="button" aria-lable="open-menu">
-              <i class="icon-menu"></i>
-            </button>
-            <div class="logo">
-              <a class="logo__link" aria-label="Go to home page">
-                <span class="sr-only">Go to home page</span>
-                <i class="icon-meta-left"></i>
-                <span class="logo__name">meta</span>
-                <i class="icon-meta-right"></i>
-              </a>
-            </div>
-            <nav class="navigation">
-              <a class="navigation__item" href="#">Новини</a>
-              <a class="navigation__item" href="#">Спорт</a>
-              <a class="navigation__item" href="#">Фінанси<i class="navigation__arrow"></i></a>
+          <div class="container">
+            <nav class="app-bar">
+              <button class="menu-btn" type="button">
+                <span class="sr-only">Open menu</span>
+                <i class="icon-menu"></i>
+              </button>
+              <div class="logo">
+                <a class="logo__link" aria-label="Go to home page">
+                  <span class="sr-only">Go to home page</span>
+                  <i class="icon-meta-left"></i>
+                  <span class="logo__name">meta</span>
+                  <i class="icon-meta-right"></i>
+                </a>
+              </div>
+              <ul class="header__rubricks">
+                <li class="header__rubricks-item">
+                  <a href="#" class="header__rubricks-link"> Новини </a>
+                </li>
+                <li class="header__rubricks-item">
+                  <a href="#" class="header__rubricks-link"> Спорт </a>
+                </li>
+                <li class="header__rubricks-item">
+                  <a href="#" class="header__rubricks-link"> Фінанси </a>
+                </li>
+              </ul>
+              <div class="header__lang">
+                <span class="current-lang">UA</span>
+                <a class="another-lang" href="">RU</a>
+              </div>
             </nav>
-            <div class="header__lang">
-              <span class="current">UA</span>
-              <a class="another-lang" href="">RU</a>
-            </div>
           </div>
         </div>
       </header>
@@ -138,7 +147,8 @@
                     <div class="news__item-wrapper">
                       <a class="news__item-link" href="#">
                         <h3 class="news__item-title">
-                          Влад Фісун: Я не знаю як <br />
+                          Влад Фісун: Я не знаю як
+                          <br />
                           діджей-галузь вибереться з цього хаосу
                         </h3>
                       </a>
@@ -202,7 +212,8 @@
                     <div class="news__item-wrapper">
                       <a class="news__item-link" href="#">
                         <h3 class="news__item-title">
-                          Влад Фісун: Я не знаю як <br />
+                          Влад Фісун: Я не знаю як
+                          <br />
                           діджей-галузь вибереться з цього хаосу
                         </h3>
                       </a>
@@ -249,7 +260,7 @@
             <button class="news-load-btn">Більше новин</button>
           </section>
         </article>
-        <aside class="container aside-block">
+        <aside class="aside-block container">
           <div class="some-adv-block">
             <a class="some-adv-block__link" href="#">
               <img
