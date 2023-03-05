@@ -3,11 +3,17 @@
 .aside-block {
   padding: 32px 0 102px;
 }
+.aside-block.container {
+  @include for-large-up {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 .some-adv-block {
-  margin-bottom: 32px;
+  margin-bottom: 26px;
   @include for-large-up {
-    padding-top: 40px;
+    padding-top: 22px;
   }
 
   &__img {

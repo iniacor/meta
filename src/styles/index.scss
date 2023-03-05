@@ -16,9 +16,6 @@
     margin: 0 auto;
   }
 }
-.top-section {
-  background-color: $bc-color-night-rider;
-}
 
 body {
   min-height: 100vh;
@@ -36,8 +33,4 @@ body {
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
-
-  @include for-large-up {
-    padding: 0;
-  }
 }

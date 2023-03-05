@@ -113,4 +113,16 @@
   background-color: #fff;
   border: 2px solid $accent-primary;
   border-radius: 24px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    background-color: $accent-primary;
+    color: #fff;
+  }
+  &:focus {
+    // box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
+  }
 }

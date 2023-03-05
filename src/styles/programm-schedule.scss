@@ -9,6 +9,10 @@
     padding: 16px;
     padding-left: 18px;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+    @include for-large-up {
+      padding-bottom: 12px;
+      padding-top: 20px;
+    }
   }
   &__title {
     font-size: 20px;
@@ -18,9 +22,15 @@
   }
   &__list {
     padding: 20px 15px 34px 17px;
+    @include for-large-up {
+      padding: 16px 20px 24px 14px;
+    }
   }
   &__item:not(:last-child) {
     margin-bottom: 19px;
+    @include for-large-up {
+      margin-bottom: 12px;
+    }
   }
 }
 .channel-item {
@@ -29,6 +39,9 @@
     padding-right: 5px;
     margin-right: 12px;
     color: $text-color-lightgrey;
+    @include for-large-up {
+      margin-right: 5px;
+    }
   }
   &__name {
     max-width: 150px;

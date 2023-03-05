@@ -3,6 +3,8 @@
 .article-block.container {
   @include for-large-up {
     margin-right: 28px;
+    padding-left: 9px;
+    padding-right: 9px;
   }
 }
 
@@ -13,10 +15,12 @@
   text-align: center;
   @include for-large-up {
     flex-direction: row;
+    padding-bottom: 18px;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
   }
+
   &__photo {
-    padding-top: 32px;
+    padding-top: 27px;
     margin-bottom: 10px;
     @include for-large-up {
       padding-top: 0;
@@ -41,8 +45,10 @@
     border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
     @include for-large-up {
       align-items: start;
-      padding-top: 49px;
-      padding-bottom: 20px;
+      width: auto;
+      padding: 49px 9px 20px;
+      // padding-top: 49px;
+      // padding-bottom: 20px;
       margin: 0;
       border-bottom: none;
     }
