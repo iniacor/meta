@@ -9,7 +9,7 @@ $bc-color-white: #fff;
 $accent-primary: #4b99f5;
 $text-color-hover-link: #1064c3;
 
-$md: 921px;
+$md: 912px;
 
 @mixin for-large-up {
   @media screen and (min-width: $md) {
