@@ -8,6 +8,10 @@
   margin: 0 -12px 0;
   padding: 0 12px 32px;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+  @include for-large-up {
+    border-bottom: none;
+  }
+
   &__list {
     margin-bottom: 17px;
     @include for-large-up {
