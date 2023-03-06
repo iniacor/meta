@@ -11,7 +11,7 @@ module.exports = (env, argv) => {
   const config = {
     entry: './src/index.js',
     output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'build'),
       filename: 'index.[contenthash:8].js',
       assetModuleFilename: 'images/[name].[contenthash][ext]',
     },
@@ -67,7 +67,7 @@ module.exports = (env, argv) => {
       }),
     ],
     devServer: {
-      static: './dist',
+      static: './build',
       historyApiFallback: true,
       compress: true,
       open: true,

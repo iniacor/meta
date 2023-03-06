@@ -45,19 +45,17 @@
 }
 
 .app-bar {
-  width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
+  width: 100%;
 }
 
 .menu-btn {
-  position: relative;
   margin-right: 20px;
   width: 24px;
   height: 24px;
   background-color: transparent;
-  z-index: 3;
   @include for-large-up {
     margin-right: 28px;
   }
@@ -89,31 +87,31 @@
   }
 }
 
-.icon-meta-left {
+.icon-meta-left,
+.icon-meta-right {
   display: inline-block;
   width: 18px;
   height: 26px;
-  transform: scale(0.7);
-  background-image: url('../icons/icon-meta-arrow.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.icon-meta-left {
+  transform: scale(0.7);
+  background-image: url('../icons/icon-meta-arrow.svg');
+}
+
 .icon-meta-right {
-  display: inline-block;
-  width: 18px;
-  height: 26px;
   transform: rotate(180deg) scale(0.7);
   background-image: url('../icons/icon-meta-arrow.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
+
 .current-lang {
   margin-right: 2px;
   color: $accent-primary;
 }
+
 .another-lang {
   color: #ffffff8a;
 }

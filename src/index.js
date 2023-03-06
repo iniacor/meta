@@ -1,20 +1,13 @@
-import axios from 'axios';
-import { format } from 'date-fns';
-import { ru } from 'date-fns/locale';
+import formatDate from './utils';
+import getNewsData from './gateway';
 import '../src/styles/index.scss';
 
-const baseUrl = 'https://63ee0ec0388920150dd83e3c.mockapi.io/news';
 const newsList = document.querySelector('.news__list');
 const loadNewsBtn = document.querySelector('.news-load-btn');
 
 const state = {
   news: [],
   currentPage: 1,
-};
-
-const formatDate = dateStr => {
-  const date = new Date(dateStr);
-  return format(date, 'HH:mm - dd MMMM yyyy', { locale: ru });
 };
 
 const createPost = news => `
@@ -53,7 +46,7 @@ const fillNews = news => {
   newsList.innerHTML = '';
   if (news.length) {
     const fragment = document.createDocumentFragment();
-    news.map(oneNews => {
+    news.forEach(oneNews => {
       const li = document.createElement('li');
       li.classList.add('news__list-item');
       li.innerHTML = createPost(oneNews);
@@ -62,16 +55,6 @@ const fillNews = news => {
     newsList.appendChild(fragment);
   } else {
     loadNewsBtn.style.display = 'none';
-  }
-};
-
-const getNewsData = async page => {
-  try {
-    const { data } = await axios.get(`${baseUrl}?page=${page}&limit=5`);
-    return data;
-  } catch (error) {
-    console.error(error.message);
-    throw error;
   }
 };
 
@@ -87,6 +70,7 @@ const handleButtonClick = async () => {
       state.news = state.news.concat(moreNews);
       fillNews(state.news);
       state.currentPage += 1;
+
       if (moreNews.length === 0) {
         loadNewsBtn.style.display = 'none';
       } else {
@@ -95,7 +79,6 @@ const handleButtonClick = async () => {
     }
   } catch (error) {
     console.error(error);
-    alert('Failed to load news. Please try again later.');
   } finally {
     loadNewsBtn.innerText = 'Більше новин';
   }

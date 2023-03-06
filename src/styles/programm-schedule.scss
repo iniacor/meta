@@ -1,9 +1,9 @@
 @import 'global.scss';
 
 .programm-schedule {
+  width: 100%;
   background-color: $bc-color-secondary;
   border-radius: 12px;
-  width: 100%;
   @include for-large-up {
     width: 276px;
   }
