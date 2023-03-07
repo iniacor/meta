@@ -60,22 +60,16 @@ const fillNews = news => {
 
 const handleButtonClick = async () => {
   try {
-    if (state.currentPage === 0) {
-      state.news = await getNewsData(1);
-      fillNews(state.news);
-      state.currentPage = 1;
-    } else {
-      loadNewsBtn.innerText = 'Завантажую...';
-      const moreNews = await getNewsData(state.currentPage);
-      state.news = state.news.concat(moreNews);
-      fillNews(state.news);
-      state.currentPage += 1;
+    loadNewsBtn.innerText = 'Завантажую...';
+    const moreNews = await getNewsData(state.currentPage);
+    state.news = state.news.concat(moreNews);
+    fillNews(state.news);
+    state.currentPage += 1;
 
-      if (moreNews.length === 0) {
-        loadNewsBtn.style.display = 'none';
-      } else {
-        loadNewsBtn.style.display = 'block';
-      }
+    if (moreNews.length === 0) {
+      loadNewsBtn.style.display = 'none';
+    } else {
+      loadNewsBtn.style.display = 'block';
     }
   } catch (error) {
     console.error(error);
